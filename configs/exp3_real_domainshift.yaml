@@ -1,0 +1,16 @@
+# Experiment 3: Real domain shift (CIFAR-10 -> CIFAR-10-C or tabular)
+dataset: "cifar10c"  # or "adult"
+corruption_levels: [1, 2, 3, 4, 5]
+seeds: 20
+r_target: 0.1
+delta: 0.1
+ratio_model: "mlp"
+split_frac: 0.5
+lambda_grid_size: 200
+loss_c: 0.5
+tau_list: [1, 2, 5, 10, 20]
+methods:
+  - uniform
+  - learned
+  - learned+clip
+  - naive-learned-no-split

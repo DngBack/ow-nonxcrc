@@ -1,0 +1,15 @@
+# Experiment 2: Streaming drift (changepoint)
+d: 10
+T: 500
+n_window: 200
+severity_second_half: 1.5
+seeds: 20
+r_target: 0.1
+delta: 0.1
+ratio_model: "logreg"
+split_frac: 0.5
+lambda_grid_size: 200
+loss_c: 0.5
+methods:
+  - uniform
+  - learned+clip

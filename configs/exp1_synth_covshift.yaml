@@ -1,0 +1,21 @@
+# Experiment 1: Synthetic covariate shift (Gaussian mean shift)
+d: 10
+n_train: 2000
+severity_list: [0, 0.5, 1, 1.5, 2]
+n_cal_list: [200, 500, 1000, 2000]
+m_unlabeled: 500
+tau_list: [1, 2, 5, 10, 20, 50]
+seeds: 30
+r_target: 0.1
+delta: 0.1
+ratio_model: "logreg"
+split_frac: 0.5
+lambda_grid_size: 200
+loss_c: 0.5
+methods:
+  - uniform
+  - oracle
+  - oracle+clip
+  - learned
+  - learned+clip
+  - naive-learned-no-split

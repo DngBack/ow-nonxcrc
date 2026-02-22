@@ -1,0 +1,5 @@
+# Weight / bound constants (Theorem 2)
+rad_C: 1.0
+rad_C_prime: 0.5
+tau_min: 1
+tau_max: 50

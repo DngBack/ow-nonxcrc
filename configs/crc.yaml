@@ -1,0 +1,6 @@
+r_target: 0.1
+delta: 0.1
+lambda_grid_size: 200
+loss_c: 0.5
+# SlackProxy for tau: use Rad(w_tau, n, delta)
+tau_selection: "min_rad"  # min_rad or grid

@@ -1,0 +1,9 @@
+predictor:
+  type: "logreg"  # logreg, mlp
+  mlp_hidden: [64, 32]
+  max_iter: 1000
+
+domain_classifier:
+  type: "logreg"
+  mlp_hidden: [64, 32]
+  max_iter: 1000
